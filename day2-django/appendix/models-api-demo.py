@@ -1,4 +1,4 @@
-from app.mastermind.models import *
+from mastermind.models import *
 
 #No games in the system yet
 Game.objects.all()
@@ -44,7 +44,7 @@ query = g.attempt_set.filter(guess__startswith="BB")
 #and check
 query
 
-# and now we delete, 
+# and now we delete,
 query.delete()
 #so that we keep our perfect record
 
