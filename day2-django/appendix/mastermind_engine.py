@@ -21,7 +21,7 @@ def check_guess(solution, guess):
         if guess[charPos] in unmatched_solution:
             correct_color_count += 1
             # remove matched colour to dedupe matches
-            unmatched_solution.replace(guess[charPos], '', 1)
+            unmatched_solution = unmatched_solution.replace(guess[charPos], '', 1)
 
     # when a colour is found in the correct position, it's also counted as just a correct colour
     # that's why we need to subtract the correct_position_and_colour_count to get instances where only Colour was correct
