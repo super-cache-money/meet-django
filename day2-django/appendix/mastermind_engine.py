@@ -1,6 +1,6 @@
 import random
 
-def checkGuess(solution, guess):
+def check_guess(solution, guess):
     solution = solution.lower()
     guess = guess.lower()
 
