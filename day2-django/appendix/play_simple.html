@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet Django</title>
+    <style>
+        .wrapper{
+            width: 270px;
+            margin: 0px auto;
+        }
+        .colours{
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrapper">
+    <h3>Pick your colours</h3>
+    <form action="#" method="POST">
+        <div class="colours">
+            <select name="pos_one">
+                <option value="R">Red</option>
+                <option value="Y">Yellow</option>
+                <option value="G">Green</option>
+                <option value="B">Blue</option>
+            </select>
+
+            <select name="pos_two">
+                <option value="R">Red</option>
+                <option value="Y">Yellow</option>
+                <option value="G">Green</option>
+                <option value="B">Blue</option>
+            </select>
+
+            <select name="pos_three">
+                <option value="R">Red</option>
+                <option value="Y">Yellow</option>
+                <option value="G">Green</option>
+                <option value="B">Blue</option>
+            </select>
+
+            <select name="pos_four">
+                <option value="R">Red</option>
+                <option value="Y">Yellow</option>
+                <option value="G">Green</option>
+                <option value="B">Blue</option>
+            </select>
+        </div>
+        <button type="submit">Check</button>
+        {% csrf_token %}
+    </form>
+</div>
+</body>
+</html>
